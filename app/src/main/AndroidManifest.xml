@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.di.battlemaniaV5">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_SMS"
+        tools:node="remove" />
+
+    <application
+        android:name="com.di.battlemaniaV5.utils.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/battlemanialogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/battlemanialogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:node="merge"
+        tools:replace="android:usesCleartextTraffic,android:allowBackup,android:theme">
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.TronActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.ChooseLanguageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectedLanguageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SingleOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MyOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SuccessOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.ProductOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SingleProductActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.ProductActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.bep20Activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MyRewardedActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.WatchAndEarnActivity"
+            android:exported="true"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemetest" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.FpOtpVerificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectedLotteryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.LotteryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.AnnouncementActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.OtpVerifyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="orientation"
+            android:label="Paypal" />
+
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:configChanges="orientation"
+            android:label="Paypal DataEntryActivity" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.IndroductionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.OfflinePaymentActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.TermsandConditionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.LeaderboardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.WithdrawMoneyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.AddMoneyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MyReferralsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.ReferandEarnActivity"
+            android:exported="true"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemetest" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectedGameActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.AppUpdateActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.HowtoActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!--
+ <provider
+            android:name=".utils.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name="com.di.battlemaniaV5.utils.InstallReceivernew">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.FirstActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeforfirstpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.di.battlemaniaV5.ui.activities.MyFirebaseMessagingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.NoInternetActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SuccessJoinActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectMatchPositionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectedResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.CustomerSupportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.AboutusActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.TopPlayerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MyStatisticsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectedTournamentActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.JoiningMatch"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.TansactionSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.TransactionFailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!--
+  <activity
+            android:name=".ui.login.TransactionSuccessActivity"
+            android:label="@string/title_activity_transaction_success" />
+        -->
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MyProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.LudoNotificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MyWalletActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.HomeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.CreateNewAccount"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.LudoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.LudoLeaderBoardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.FriendsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.SelectedMyContestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.di.battlemaniaV5.ui.activities.LudoChatActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeplaceholder" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
